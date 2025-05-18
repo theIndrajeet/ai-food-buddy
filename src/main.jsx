@@ -1,7 +1,11 @@
-import './styles/tailwind.css'; // Your new line
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-// any other existing default imports like './index.css' if it's there
+import './styles/tailwind.css'; // Your Tailwind styles
+import './index.css';         // Default Vite global styles (good to keep for now)
 
-// ... rest of the file
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
